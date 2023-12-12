@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <h1>Strona Główna</h1>
+    <a href="index.html">Strona Główna</a>
+    <a href="strona1.html">akcyza powinna byc mniejsza</a>
+    <a href="strona2.html">marcelek hatepage</a>
+    <br>
+    <p>jajka ile ich jest?</p>
+    <br>
+    <img src="atlas.jpg" alt="atlas">
+    <p id="czas"></p>
+    <script>
+    
+    var data=new Date ()
+    var godzina = data.getHours()
+    var minuta = data.getMinutes()
+    var wynik ="Aktualna godzina: " + godzina + ":" + (minuta < 10 ? "0" : "") + minuta
+
+    document.getElementById("czas").innerHTML=wynik
+    </script>
+</body>
+</html>
